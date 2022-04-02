@@ -1,3 +1,4 @@
-# responsive-material-header
+# Frontend Utility package
 
-Responsive Header for Material UI
+## Includes
+ - Responsive Header

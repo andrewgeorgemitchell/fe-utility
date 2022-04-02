@@ -1,1 +1,3 @@
-export * from './lib/ResponsiveHeader';
+import ResponsiveHeader from './lib/ResponsiveHeader/ResponsiveHeader';
+
+export { ResponsiveHeader };

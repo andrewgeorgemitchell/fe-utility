@@ -7,3 +7,9 @@ src/**.js
 coverage
 *.log
 package-lock.json
+
+# Yalc
+/.yalc
+yalc.lock
+
+dist

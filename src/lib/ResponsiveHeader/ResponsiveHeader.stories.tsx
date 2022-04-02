@@ -1,7 +1,6 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import ResponsiveHeader from './ResponsiveHeader';
+import ResponsiveHeader, { ResponsiveHeaderProps } from './ResponsiveHeader';
 
 export default {
   title: 'ResponsiveHeader',
@@ -14,7 +13,7 @@ const Template: ComponentStory<typeof ResponsiveHeader> = (args) => (
 
 export const Default = Template.bind({});
 
-Default.args = {
+const DefaultProps: ResponsiveHeaderProps = {
   links: [
     {
       to: '/',
@@ -27,6 +26,12 @@ Default.args = {
     {
       to: '/contact',
       text: 'Contact',
+      subLinks: [
+        {
+          to: '/contact/email',
+          text: 'Email',
+        },
+      ],
     },
   ],
   logo: {
@@ -34,3 +39,5 @@ Default.args = {
     alt: 'Responsive Header Logo',
   },
 };
+
+Default.args = DefaultProps;
